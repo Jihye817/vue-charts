@@ -23,7 +23,7 @@ export default {
             }
           ]
         },
-        onClick: function() {
+        onClick: () => { //function() {~} 로 하는 경우 bind가 안 되어 this.$emit is not a function 발생
           this.$emit('refresh:chart');
         }
       }
